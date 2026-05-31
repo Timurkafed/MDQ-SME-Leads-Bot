@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-05-31T00:00:17.854775+00:00",
+  "model_name": "Isolation Forest + One-Class SVM rank ensemble",
+  "model_metrics": {
+    "metric_scope": "Proxy evaluation: holdout business cards as positives and consumer pool as negatives",
+    "roc_auc": 0.9977173349999999,
+    "precision": 0.9971771347918137,
+    "recall": 0.8478,
+    "f1_score": 0.9164414657874824,
+    "confusion_matrix": [
+      [
+        79988,
+        12
+      ],
+      [
+        761,
+        4239
+      ]
+    ],
+    "holdout_business_rows": 5000,
+    "consumer_rows": 80000,
+    "isolation_forest_holdout_recall": 0.9068,
+    "isolation_forest_consumer_pass_rate": 0.0055375,
+    "ocsvm_holdout_recall": 0.9114,
+    "ocsvm_consumer_pass_rate": 0.0001625,
+    "isolation_forest_params": {
+      "n_estimators": 300,
+      "contamination": "auto"
+    },
+    "ocsvm_params": {
+      "nu": 0.2,
+      "gamma": "scale"
+    },
+    "score_interpretation": "Consumer percentile-like opportunity rank, not a calibrated probability"
+  },
+  "score_note": "SME Score is a percentile-like business-likeness opportunity rank, not a probability.",
+  "recommendation_note": "Segments and product suggestions are transparent demo rules, not ML predictions.",
+  "revenue_note": "Revenue values are illustrative scenarios based on assumed margins, not observed bank income or validated tariffs.",
+  "total_consumer_clients": 80000,
+  "high_potential_clients": 3545,
+  "medium_potential_clients": 3806,
+  "average_sme_score": 50.001775,
+  "average_sme_rank_score": 0.50000625,
+  "illustrative_monthly_revenue_kzt_high": 79970013,
+  "illustrative_monthly_revenue_kzt_top_100": 2468807,
+  "segments": {
+    "Freelancer / Digital Professional": 64241,
+    "Growing Microbusiness": 7660,
+    "Online Seller": 5856,
+    "Subscription / Recurring Business": 2237,
+    "Local Service Provider": 6
+  },
+  "score_bands": {
+    "LOW": 72649,
+    "MEDIUM": 3806,
+    "HIGH": 3545
+  },
+  "demo_ids": [
+    "5100612020402608",
+    "5176476691114937",
+    "5201499082819830",
+    "5338474007563215",
+    "5486737863418710",
+    "5176512938679108",
+    "5176513825363681",
+    "5228596285044584",
+    "5228598521042281",
+    "5531510634404698"
+  ]
+}
